@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import LoginPage from '@/views/LoginPage.vue';
 import FatecGptPage from '@/views/FatecGptPage.vue';
+import RegisterPage from '@/views/RegisterPage.vue';
 
 
 const routes = [
@@ -17,7 +18,13 @@ const routes = [
       path: '/fatec_gpt',
       name: 'FatecGptPage',
       component: FatecGptPage
+    },
+    {
+      path: '/register',
+      name: 'RegisterPage',
+      component: RegisterPage
     }
+
   ];
   
   const router = createRouter({
